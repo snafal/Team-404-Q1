@@ -49,11 +49,16 @@ o	DB_PASS and DB_USER in the .env file with your MongoDB Connection String. And 
 ________________________________________
 🔍 Assumptions Made During Development
 •	The user must have at least 8 characters for the username.
+
 •	Passwords are stored securely using bcrypt hashing.
+
 •	The backend is hosted on http://localhost:5500/ for local development.
+
 ✨ Additional Features (Optional Enhancements)
 •	Password Encryption: Uses bcrypt to hash passwords for security.
+
 •	Real-Time Validation: Client-side validation to improve user experience.
+
 •	Error Handling: Displays appropriate error messages for failed login/signup attempts.
 
 📜 License
