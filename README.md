@@ -24,7 +24,7 @@ Technologies Used
 
 How to Run
 1. Clone the repository:
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/snafal/team 404-Q1.git
 2.	Open login.html or signup.html in your browser.
 3.	Ensure your backend is running on http://localhost:5500.
 📜 License
