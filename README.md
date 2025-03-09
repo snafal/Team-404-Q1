@@ -27,7 +27,7 @@ Technologies Used
 
 How to Run
 1. Clone the repository:
-   git clone https://github.com/snafal/Team 404-Q1.git
+   git clone https://github.com/snafal/Team-404-Q1.git
 
 Navigate to the project folder:
 cd Team 404-Q1
