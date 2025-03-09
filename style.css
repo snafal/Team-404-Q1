@@ -1,0 +1,159 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #d8e3e7 0%, #f0f4f8 100%);
+    margin: 0;
+    color: #333;
+    transition: background 0.5s ease;
+}
+
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    animation: fadeIn 0.8s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+h1 {
+    text-align: center;
+    color: #4c66af;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #285ba7;
+    background-color: #eafaf1;
+    box-shadow: 0 0 8px rgba(40, 42, 167, 0.3);
+    outline: none;
+}
+
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #2835a7, #53659f);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4c90af, #38738e);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.error, .success {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+.success {
+    color: #2ecc71;
+}
+
+
+#password-strength {
+    height: 6px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.weak {
+    background: #e74c3c;
+}
+
+.medium {
+    background: #f39c12;
+}
+
+.strong {
+    background: #2ecc71;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+input:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    input, button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+
+input:focus-visible {
+    transition: box-shadow 0.3s ease-in-out;
+    outline: none;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}

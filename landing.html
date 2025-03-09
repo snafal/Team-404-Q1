@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=" stylees.css">
+  <title>Landing Page</title>
+</head>
+<body>
+    <div>
+  <h1 id="welcome-message">Hello, User!</h1></div>
+  <div>
+  <button id="logout">Logout</button>
+</div>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get("username");
+
+    if (!username) {
+      window.location.href = "login.html";
+    }
+
+    document.getElementById("welcome-message").textContent = `Hello, ${username}!`;
+
+   
+    document.getElementById("logout").addEventListener("click", function() {
+      localStorage.removeItem("loggedIn");
+      localStorage.removeItem("username");
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>
